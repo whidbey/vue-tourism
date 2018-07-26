@@ -1,0 +1,40 @@
+.price-info {
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: .8;
+    background: rgba(0, 0, 0, 1);
+    color: #fff;
+    .flight, .hotel {
+        margin: .5rem .1rem;
+    }
+    .all {
+        display: flex;
+        justify-content: space-between;
+        margin: .1rem .3rem;
+        line-height: .54rem;
+    }
+    .common {
+        font-size: @20px;
+        .weui-cell__ft {
+            .free {
+                color: @second-text-dark-color;
+            }
+        }
+    }
+    .bottom-tips {
+        padding: .1rem .4rem;
+    }
+    .bottom {
+        position: relative;
+        .icon {
+            position: absolute;
+            left: 50vw;
+            top: 5vh;
+        }
+    }
+}

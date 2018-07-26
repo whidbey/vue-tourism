@@ -1,0 +1,20 @@
+@homeNav: ~"@{app-css-prefix}home-nav";
+.@{homeNav} {
+    display: flex;
+    align-items: center;
+    height: @1px * 56;
+    overflow: hidden;
+    .border-bottom-1px(@border-dark-color);
+    .nav-item {
+        width: @1px * 80;
+        text-align: center;
+        transition: all ease-in-out .5s;
+        .nav-icon{
+            margin: 0 auto;
+        }
+        &.active {
+            color: @theme-color;
+        }
+    }
+
+}

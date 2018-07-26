@@ -1,0 +1,59 @@
+.select-price{
+    margin-top: .8rem;
+    font-size: @16px;
+    content: "";
+    display: table;
+    clear: both;
+    zoom: 1;
+    width: 100%;
+    li:nth-child(3), li:nth-child(6) {
+        border-right: 1px solid #fff;
+        width: 33%;
+    }
+    li:nth-child(1), li:nth-child(4) {
+        width: 33%;
+    }
+    li:nth-child(2), li:nth-child(5) {
+        width: 34%;
+    }
+    li:nth-child(4), li:nth-child(5), li:nth-child(6) {
+        margin-top: -1px;
+    }
+    &__item {
+        box-sizing: border-box;
+        float: left;
+        position: relative;
+        text-align: center;
+        height: 1rem;
+        line-height: 1rem;
+        border: 1px solid #D8D8D8;
+        border-left: 0;
+        overflow: hidden;
+        &.selected{
+            border: 1px solid #EE5456;
+            z-index: 2;
+            &::after {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                content: '';
+                width: 7px;
+                height: 6px;
+                background: url('~Assets/check@2x.png') no-repeat;
+                background-size: 7px 6px;
+            }
+            p {
+                position: absolute;
+                transform: rotate(45deg);
+                right: -8px;
+                bottom: -8px;
+                width: 16px;
+                height: 16px;
+                background: #EF5557;
+            }
+        }
+    }
+    li.border-right {
+        border-right: 1px solid #D8D8D8;
+    }
+}

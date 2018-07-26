@@ -1,0 +1,46 @@
+.page-write {
+    height: 100vh;
+    background: @color99;
+    .write {
+        padding: .2rem;
+        background: #fff;
+        color: #999;
+        > span {
+            color: @color33;
+        }
+    }
+    .top {
+        color: #333;
+        //border-bottom: 1px solid #989898;
+    }
+    .passenger {
+        margin: .2rem auto;
+        width: 91vw;
+        //height: 20vh;
+        padding: .2rem .1rem;
+        background: #f8f5f5;
+        border-radius: .2rem;
+        &-title {
+            display: flex;
+            justify-content: space-between;
+            margin: .1rem;
+            .icon {
+                font-size: @18px;
+                color: @colorBase;
+            }
+            .booking {
+                color: @colorBase;
+            }
+        }
+        &-person {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 .5rem;
+            .person-item {
+                background: #fff;
+                padding: .1rem;
+                border-radius: .1rem;
+            }
+        }
+    }
+}

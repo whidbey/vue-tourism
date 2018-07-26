@@ -1,0 +1,145 @@
+.order-sheet{
+    //width: 100%;
+    flex: 1;
+    background-color: #fff;
+    .vendor-info{
+        width: 100%;
+        line-height: @20px * 2;
+        font-size: @16px;
+        margin-bottom: @10px;
+        .border-bottom-1px(@dividers-dark-color);
+        .tag{
+            position: relative;
+            top: -@1px;
+            margin-left: @5px;
+            padding: @1px @5px;
+            font-size: @10px;
+            color: @gold-theme-color;
+            border-radius: @1px * 2;
+            border: @1px solid @gold-theme-color;
+        }
+    }
+    .flight-info{
+        .flight-line{
+            font-weight: 500;
+            .tag{
+                background-color: #6556cf;
+                color: #fff;
+                margin-right: @10px;
+                padding: 0 @5px;
+                border-radius: @1px;
+            }
+            .icon{
+                margin: 0 @10px;
+                color: @second-text-dark-color
+            }
+        }
+        .line-detail{
+            margin-top: @10px;
+            .line-info{
+                display: flex;
+                .line-item{
+                    display: flex;
+                    flex-direction: column;
+                    height: @1px * 100;
+                    justify-content: space-between;
+                    span{
+                        font-size: @16px;
+                        font-weight: 600;
+                        i{
+                            font-size: @10px;
+                            color: #999;
+                            display: block;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .divide-line{
+                    margin: @20px @20px 0;
+                    width: @1px * 2;
+                    height: @1px * 70;
+                    background-color: @dividers-dark-color;
+                    &:before{
+                        position: relative;
+                        content: '';
+                        display: block;
+                        width: @1px * 8;
+                        height: @1px * 8;
+                        top: -@1px * 8;
+                        left: -@1px * 3;
+                        border-radius: 50%;
+                        background-color: @border-dark-color;
+                    }
+                    &:after{
+                        position: relative;
+                        content: '';
+                        display: block;
+                        width: @1px * 8;
+                        height: @1px * 8;
+                        bottom: -@10px * 6;
+                        left: -@1px * 3;
+                        border-radius: 50%;
+                        background-color: @border-dark-color;
+                    }
+                }
+            }
+
+        }
+    }
+    .hotel-info{
+        .product-name{
+            font-size: @14px;
+            font-weight: 500;
+            margin-bottom: @5px;
+        }
+        .desc{
+            font-size: @12px;
+            font-weight: 500;
+        }
+        .tips{
+            font-size: @10px;
+            color: @second-text-dark-color
+        }
+        .reserve-info{
+            margin-top: @10px;
+            padding: @10px 0;
+            .border-top-1px(@dividers-dark-color);
+            display: flex;
+            .time{
+                font-size: @14px;
+                i{
+                    display: block;
+                    font-size: @10px;
+                    color: @second-text-dark-color;
+                }
+            }
+            .room{
+                margin: 0 @15px;
+                width: @24px;
+                height: @24px;
+                font-size: @12px;
+                border-radius: 50%;
+                text-indent: @1px;
+                color: #999;
+                border: @1px solid @border-dark-color;
+            }
+        }
+    }
+    .view-info{
+        .product-name{
+            font-size: @14px;
+            font-weight: 500;
+            margin-bottom: @10px;
+        }
+        .use-tips{
+            line-height: @line-height-14;
+            font-weight: @12px;
+            margin-bottom: @5px;
+            .label{
+                display: inline-block;
+                width: 20vw;
+                color: @second-text-dark-color;
+            }
+        }
+    }
+}

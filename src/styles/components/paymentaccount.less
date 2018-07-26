@@ -1,0 +1,36 @@
+@account: ~"@{app-css-prefix}account";
+.@{account} {
+    position: relative;
+    &-input{
+        box-sizing: border-box;
+        height: @1px * 48;
+        border: @1px solid @border-dark-color;
+        margin: @1px * 8 @15px @1px * 20;
+        border-radius: @1px * 4;
+        input{
+            //font-weight: 500;
+        }
+        .error-tip{
+            margin-top: @1px * 8;
+            font-size: @12px;
+            color: @theme-color;
+        }
+    }
+    .history-account{
+        position: absolute;
+        top: 100%;
+        margin-top: @10px;
+        z-index: @zIndex-bottom-btn;
+        width: 100%;
+        background-color: #fff;
+        .account-item{
+            line-height: @1px * 42;
+            padding: 0 @15px;
+            .border-top-1px(@border-dark-color);
+            &:last-of-type{
+                box-shadow: 1px 1px 2px @border-dark-color;
+            }
+        }
+
+    }
+}

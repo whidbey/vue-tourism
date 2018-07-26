@@ -1,0 +1,39 @@
+.vf-header{
+  height: 7vh;
+  &-content{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: @zIndex-header;
+    width: 100vw;
+    line-height: 7vh;
+    background-color: @theme-color;
+    overflow: hidden;
+    .back-btn{
+      position: absolute;
+      width: .3rem;
+      height: .3rem;
+      top: 50%;
+      left: .32rem;
+      transform: translateY(-50%);
+      &:before {
+        content: "";
+        .setArrow(left, .28rem, #fff, 1px);
+        position: absolute;
+        top: 0;
+        left: 50%;
+      }
+    }
+    .title{
+      display: block;
+      margin: 0 1.28rem;
+      font-size: @18px;
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+}

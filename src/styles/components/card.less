@@ -1,0 +1,42 @@
+.product-card{
+    background: #eef9ff;
+    width: 88%;
+    margin: @10px auto 0;
+    padding: @10px @15px;
+    border-radius: @1px * 8;
+    box-shadow: 2px 2px 16px @border-dark-color;
+    &-title{
+        position: relative;
+        font-weight: 600;
+        font-size: @16px;
+        .title-desc{
+            margin-top: @1px * 2;
+            font-size: @12px;
+            color: @second-text-dark-color;
+            display: block;
+            font-weight: 400;
+            line-height: @line-height-14;
+        }
+        .product-info{
+            position: absolute;
+            right: @15px;
+            top: 0;
+            font-size: @14px;
+        }
+    }
+    &-content{
+        padding: @15px 0;
+    }
+    .bold-title{
+        font-weight: 500;
+        font-size: @1px * 22;
+    }
+    .price {
+        color: @gold-theme-color;
+    }
+    .detail-tips{
+        line-height: @16px;
+        font-size: @12px;
+        color: @second-text-dark-color;
+    }
+}

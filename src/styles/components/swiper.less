@@ -1,0 +1,33 @@
+@banner: ~"@{app-css-prefix}banner";
+
+.@{banner}{
+  width: 100%;
+  height: 2.11rem;
+  transition: all 0.5s ease-out;
+  overflow: hidden;
+  position: relative;
+  background-color: @theme-color;
+  .icon-hexagon{
+    position: absolute;
+    left: 6.54rem;
+    bottom: 0.32rem;
+    z-index: 10;
+    color: rgba(255,255,255,.4);
+    font-size: .64rem;
+  }
+  .swiper-pagination {
+    width: .64rem;
+    height: .64rem;
+    left: 6.54rem;
+    bottom: 0.1rem;
+    font-size: .24rem;
+    color: #fff;
+  }
+  img {
+    width: 100%;
+    height: 2.11rem;
+  }
+  .swiper-slide {
+    height: auto;
+  }
+}
